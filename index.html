@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TimeTravel Agency — Voyages Temporels de Luxe</title>
+  <meta name="description" content="Explorez les plus grandes époques de l'histoire avec TimeTravel Agency. Voyages temporels de luxe vers Paris 1889, Florence 1504 et le Crétacé. Technologie quantique brevetée." />
+  <meta property="og:title" content="TimeTravel Agency — Voyages Temporels de Luxe" />
+  <meta property="og:description" content="Voyagez à travers le temps avec notre technologie quantique brevetée." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════ LOADER ═══════ -->
+<div id="loader" class="loader">
+  <canvas id="loaderCanvas"></canvas>
+  <div class="loader-content">
+    <div class="loader-portal"></div>
+    <div class="loader-text">
+      <span class="loader-agency">TIMETRAVEL AGENCY</span>
+      <span class="loader-sub">Initialisation du système temporel...</span>
+      <div class="loader-bar-wrap"><div class="loader-bar" id="loaderBar"></div></div>
+      <span class="loader-percent" id="loaderPercent">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ NAVBAR ═══════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-icon">⏳</span>
+      <span class="logo-text">TimeTravel<span class="logo-accent">Agency</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Accueil</a></li>
+      <li><a href="#destinations" class="nav-link">Destinations</a></li>
+      <li><a href="#ai-advisor" class="nav-link">Assistant IA</a></li>
+      <li><a href="#booking" class="nav-link">Réservation</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#booking" class="btn-cta nav-cta">Réserver maintenant</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════ HERO ═════════ -->
+<section class="hero" id="home">
+  <canvas id="starCanvas"></canvas>
+  <div class="hero-portal-wrap">
+    <div class="hero-portal" id="heroPortal">
+      <div class="portal-ring ring-1"></div>
+      <div class="portal-ring ring-2"></div>
+      <div class="portal-ring ring-3"></div>
+      <div class="portal-core"></div>
+      <div class="portal-particles" id="portalParticles"></div>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" id="heroContent">
+    <div class="hero-badge">✦ Technologie Quantique Brevetée ✦</div>
+    <h1 class="hero-title">
+      Voyagez à travers<br/><span class="hero-title-accent">le temps</span>
+    </h1>
+    <p class="hero-subtitle">Découvrez les plus grandes époques de l'histoire grâce à notre technologie de voyage temporel de luxe. Une expérience unique, sécurisée et inoubliable.</p>
+    <div class="hero-buttons">
+      <a href="#destinations" class="btn-primary">
+        <span>Explorer les destinations</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#ai-advisor" class="btn-secondary">
+        <span>✦ Parler à Chronos IA</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="25000">0</span>
+        <span class="stat-label">Voyageurs</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="300">0</span>
+        <span class="stat-label">Voyages temporels</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="99.8" data-suffix="%">0</span>
+        <span class="stat-label">Retours réussis</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span>Découvrir</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ ABOUT ════════ -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Notre Promesse</span>
+      <h2 class="section-title">Pourquoi choisir <span class="gold">TimeTravel Agency</span> ?</h2>
+      <p class="section-desc">Nous réinventons l'exploration humaine en fusionnant luxe, sécurité et technologie quantique.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card" data-animate data-delay="0">
+        <div class="about-icon">🛡️</div>
+        <h3>Sécurité Temporelle</h3>
+        <p>Chaque voyage est encadré par nos experts en physique quantique et historiens certifiés. Protocoles de sécurité de grade militaire.</p>
+        <div class="about-badge">Certifié ISO-9T</div>
+      </div>
+      <div class="about-card glass-card" data-animate data-delay="150">
+        <div class="about-icon">🏛️</div>
+        <h3>Immersion Historique</h3>
+        <p>Accès exclusif aux périodes les plus fascinantes de l'humanité. Vivre l'histoire de l'intérieur, pas depuis un livre.</p>
+        <div class="about-badge">Expérience Unique</div>
+      </div>
+      <div class="about-card glass-card" data-animate data-delay="300">
+        <div class="about-icon">⚛️</div>
+        <h3>Technologie Quantique</h3>
+        <p>Notre système breveté de navigation temporelle utilise l'intrication quantique pour des déplacements précis à la milliseconde.</p>
+        <div class="about-badge">Brevet n°QT-2089</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ DESTINATIONS ═════ -->
+<section class="destinations section" id="destinations">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Nos Voyages</span>
+      <h2 class="section-title">Choisissez votre <span class="gold">époque</span></h2>
+      <p class="section-desc">Trois destinations soigneusement sélectionnées pour une immersion totale dans les moments les plus marquants de l'histoire.</p>
+    </div>
+    <div class="destinations-grid">
+
+      <!-- Paris 1889 -->
+      <div class="dest-card" data-animate data-delay="0" onclick="openModal('paris')">
+        <div class="dest-img-wrap">
+          <img src="images/paris.png" alt="Paris 1889 - Exposition Universelle" class="dest-img" loading="lazy" />
+          <div class="dest-img-overlay"></div>
+          <div class="dest-era">1889</div>
+          <div class="dest-badge">⭐ Best-seller</div>
+        </div>
+        <div class="dest-content">
+          <div class="dest-meta">
+            <span class="dest-location">📍 Paris, France</span>
+            <span class="dest-duration">⏱ 3 jours</span>
+          </div>
+          <h3 class="dest-title">Paris 1889</h3>
+          <p class="dest-subtitle">Exposition Universelle</p>
+          <p class="dest-desc">Découvrez la Belle Époque et assistez à la naissance de la Tour Eiffel. Rencontrez des artistes, ingénieurs et inventeurs de la fin du XIXe siècle.</p>
+          <div class="dest-activities">
+            <span class="activity-tag">Tour Eiffel</span>
+            <span class="activity-tag">Expo Universelle</span>
+            <span class="activity-tag">Cafés parisiens</span>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-price">
+              <span class="price-from">À partir de</span>
+              <span class="price-amount">3 490 €</span>
+            </div>
+            <button class="dest-btn">Découvrir →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Florence 1504 -->
+      <div class="dest-card dest-card--featured" data-animate data-delay="150" onclick="openModal('florence')">
+        <div class="dest-img-wrap">
+          <img src="images/florence.png" alt="Florence 1504 - Renaissance italienne" class="dest-img" loading="lazy" />
+          <div class="dest-img-overlay"></div>
+          <div class="dest-era">1504</div>
+          <div class="dest-badge dest-badge--gold">✦ Exclusif</div>
+        </div>
+        <div class="dest-content">
+          <div class="dest-meta">
+            <span class="dest-location">📍 Florence, Italie</span>
+            <span class="dest-duration">⏱ 7 jours</span>
+          </div>
+          <h3 class="dest-title">Florence 1504</h3>
+          <p class="dest-subtitle">Renaissance Italienne</p>
+          <p class="dest-desc">Plongez dans l'âge d'or de la Renaissance italienne. Découvrez l'art, l'architecture et les plus grands génies de l'époque.</p>
+          <div class="dest-activities">
+            <span class="activity-tag">Michel-Ange</span>
+            <span class="activity-tag">Palais Médicis</span>
+            <span class="activity-tag">Art Renaissance</span>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-price">
+              <span class="price-from">À partir de</span>
+              <span class="price-amount">4 290 €</span>
+            </div>
+            <button class="dest-btn">Découvrir →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crétacé -->
+      <div class="dest-card" data-animate data-delay="300" onclick="openModal('cretaceous')">
+        <div class="dest-img-wrap">
+          <img src="images/cretaceous.png" alt="Crétacé - Monde des dinosaures" class="dest-img" loading="lazy" />
+          <div class="dest-img-overlay"></div>
+          <div class="dest-era">-65M</div>
+          <div class="dest-badge dest-badge--danger">⚡ Aventure</div>
+        </div>
+        <div class="dest-content">
+          <div class="dest-meta">
+            <span class="dest-location">🌍 Terre préhistorique</span>
+            <span class="dest-duration">⏱ 1 semaine</span>
+          </div>
+          <h3 class="dest-title">Crétacé</h3>
+          <p class="dest-subtitle">-65 millions d'années</p>
+          <p class="dest-desc">Explorez la Terre préhistorique et observez les dinosaures dans leur habitat naturel grâce à nos capsules d'observation sécurisées.</p>
+          <div class="dest-activities">
+            <span class="activity-tag">Safari Dinos</span>
+            <span class="activity-tag">Observation</span>
+            <span class="activity-tag">Zones protégées</span>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-price">
+              <span class="price-from">À partir de</span>
+              <span class="price-amount">6 990 €</span>
+            </div>
+            <button class="dest-btn">Découvrir →</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ MODALS ═══════ -->
+<!-- Paris Modal -->
+<div class="modal-overlay" id="modal-paris" onclick="closeModalOnOverlay(event, 'paris')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('paris')">✕</button>
+    <div class="modal-hero">
+      <img src="images/paris.png" alt="Paris 1889" class="modal-img" />
+      <div class="modal-hero-overlay">
+        <div class="modal-era-badge">1889</div>
+        <h2 class="modal-title">Paris 1889</h2>
+        <p class="modal-subtitle">Belle Époque · Exposition Universelle</p>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-info-grid">
+        <div class="modal-info-item">
+          <span class="info-icon">⏱</span>
+          <span class="info-label">Durée</span>
+          <span class="info-value">3 jours</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">🌡️</span>
+          <span class="info-label">Météo</span>
+          <span class="info-value">18°C, ensoleillé</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">⚠️</span>
+          <span class="info-label">Risque</span>
+          <span class="info-value">🟢 Minimal</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">💰</span>
+          <span class="info-label">Prix</span>
+          <span class="info-value">3 490 €</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Description</h3>
+        <p>Vivez la magie de la Belle Époque ! Assistez en direct à l'inauguration de la Tour Eiffel, flânez dans les allées de l'Exposition Universelle, et côtoyez les grands inventeurs et artistes du XIXe siècle.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Activités incluses</h3>
+        <ul class="modal-activities">
+          <li>🗼 Montée exclusive de la Tour Eiffel en construction</li>
+          <li>🎨 Visite privée de l'Exposition Universelle</li>
+          <li>☕ Déjeuner dans un café parisien d'époque</li>
+          <li>🎭 Soirée au Moulin Rouge nouvellement ouvert</li>
+          <li>🤝 Rencontre avec des personnalités historiques</li>
+        </ul>
+      </div>
+      <div class="modal-testimonials">
+        <h3>Témoignages</h3>
+        <div class="modal-testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Une expérience qui change la vie ! Voir la Tour Eiffel naître sous mes yeux était incroyable."</p>
+          <span>— Jean-Pierre M., Paris</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-price">3 490 €<small>/personne</small></span>
+        <a href="#booking" class="btn-primary modal-book-btn" onclick="closeModal('paris'); setDestination('Paris 1889')">Réserver ce voyage</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Florence Modal -->
+<div class="modal-overlay" id="modal-florence" onclick="closeModalOnOverlay(event, 'florence')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('florence')">✕</button>
+    <div class="modal-hero">
+      <img src="images/florence.png" alt="Florence 1504" class="modal-img" />
+      <div class="modal-hero-overlay">
+        <div class="modal-era-badge">1504</div>
+        <h2 class="modal-title">Florence 1504</h2>
+        <p class="modal-subtitle">Renaissance · Michel-Ange · Léonard de Vinci</p>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-info-grid">
+        <div class="modal-info-item">
+          <span class="info-icon">⏱</span>
+          <span class="info-label">Durée</span>
+          <span class="info-value">7 jours</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">🌡️</span>
+          <span class="info-label">Météo</span>
+          <span class="info-value">24°C, ciel bleu</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">⚠️</span>
+          <span class="info-label">Risque</span>
+          <span class="info-value">🟢 Minimal</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">💰</span>
+          <span class="info-label">Prix</span>
+          <span class="info-value">4 290 €</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Description</h3>
+        <p>Plongez au cœur de la Renaissance italienne. Rencontrez Michel-Ange dans son atelier alors qu'il finalise son David, assistez aux conférences de Léonard de Vinci, et explorez les palais des Médicis.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Activités incluses</h3>
+        <ul class="modal-activities">
+          <li>🎨 Visite de l'atelier de Michel-Ange</li>
+          <li>📐 Session avec Léonard de Vinci</li>
+          <li>🏛️ Tour des palais florentins</li>
+          <li>🛍️ Marchés Renaissance authentiques</li>
+          <li>🎭 Banquet chez les Médicis</li>
+        </ul>
+      </div>
+      <div class="modal-testimonials">
+        <h3>Témoignages</h3>
+        <div class="modal-testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Voir Michel-Ange à l'œuvre... Les mots me manquent. Le voyage de ma vie, sans hésitation."</p>
+          <span>— Sophie L., Lyon</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-price">4 290 €<small>/personne</small></span>
+        <a href="#booking" class="btn-primary modal-book-btn" onclick="closeModal('florence'); setDestination('Florence 1504')">Réserver ce voyage</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cretaceous Modal -->
+<div class="modal-overlay" id="modal-cretaceous" onclick="closeModalOnOverlay(event, 'cretaceous')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('cretaceous')">✕</button>
+    <div class="modal-hero">
+      <img src="images/cretaceous.png" alt="Crétacé" class="modal-img" />
+      <div class="modal-hero-overlay">
+        <div class="modal-era-badge">-65M ans</div>
+        <h2 class="modal-title">Crétacé</h2>
+        <p class="modal-subtitle">Dinosaures · Safari Préhistorique · Aventure</p>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-info-grid">
+        <div class="modal-info-item">
+          <span class="info-icon">⏱</span>
+          <span class="info-label">Durée</span>
+          <span class="info-value">1 semaine</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">🌡️</span>
+          <span class="info-label">Météo</span>
+          <span class="info-value">32°C, humide</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">⚠️</span>
+          <span class="info-label">Risque</span>
+          <span class="info-value">🟡 Modéré</span>
+        </div>
+        <div class="modal-info-item">
+          <span class="info-icon">💰</span>
+          <span class="info-label">Prix</span>
+          <span class="info-value">6 990 €</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <h3>Description</h3>
+        <p>Partez à la découverte de la Terre il y a 65 millions d'années. Depuis nos capsules d'observation blindées de pointe, observez des T-Rex, Triceratops et Ptérodactyles dans leur habitat naturel.</p>
+      </div>
+      <div class="modal-section">
+        <h3>Activités incluses</h3>
+        <ul class="modal-activities">
+          <li>🦕 Safari dinosaures en capsule blindée</li>
+          <li>🔬 Collecte d'échantillons scientifiques</li>
+          <li>🏕️ Camp de base temporel sécurisé</li>
+          <li>🎯 Observation nocturne des étoiles primitives</li>
+          <li>📊 Débrief avec paléontologue expert</li>
+        </ul>
+      </div>
+      <div class="modal-testimonials">
+        <h3>Témoignages</h3>
+        <div class="modal-testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Voir un T-Rex de près dans une capsule sécurisée... L'adrénaline absolue ! Je recommande à 100%."</p>
+          <span>— Marc D., Bordeaux</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-price">6 990 €<small>/personne</small></span>
+        <a href="#booking" class="btn-primary modal-book-btn" onclick="closeModal('cretaceous'); setDestination('Crétacé (-65M ans)')">Réserver ce voyage</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ AI QUIZ ══════ -->
+<section class="ai-quiz section" id="ai-advisor">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Intelligence Artificielle</span>
+      <h2 class="section-title">Votre voyage <span class="gold">personnalisé</span></h2>
+      <p class="section-desc">Répondez à quelques questions et Chronos IA vous recommandera la destination parfaite.</p>
+    </div>
+    <div class="quiz-wrapper glass-card" data-animate>
+      <div class="quiz-progress">
+        <div class="quiz-step-indicator">
+          <div class="quiz-step active" data-step="1">1</div>
+          <div class="quiz-step-line"></div>
+          <div class="quiz-step" data-step="2">2</div>
+          <div class="quiz-step-line"></div>
+          <div class="quiz-step" data-step="3">3</div>
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="quiz-panel active" id="quiz-step-1">
+        <h3 class="quiz-question">Quel est votre centre d'intérêt principal ?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" data-value="histoire" onclick="selectQuizOpt(this, 1)">
+            <span class="opt-icon">📜</span>
+            <span class="opt-label">Histoire</span>
+          </button>
+          <button class="quiz-opt" data-value="art" onclick="selectQuizOpt(this, 1)">
+            <span class="opt-icon">🎨</span>
+            <span class="opt-label">Art</span>
+          </button>
+          <button class="quiz-opt" data-value="aventure" onclick="selectQuizOpt(this, 1)">
+            <span class="opt-icon">⚡</span>
+            <span class="opt-label">Aventure</span>
+          </button>
+          <button class="quiz-opt" data-value="science" onclick="selectQuizOpt(this, 1)">
+            <span class="opt-icon">🔬</span>
+            <span class="opt-label">Science</span>
+          </button>
+        </div>
+        <button class="btn-quiz-next" onclick="quizNext(2)" id="quiz-next-1" disabled>Suivant →</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="quiz-panel" id="quiz-step-2">
+        <h3 class="quiz-question">Quel est votre budget pour ce voyage ?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" data-value="2000" onclick="selectQuizOpt(this, 2)">
+            <span class="opt-icon">💰</span>
+            <span class="opt-label">Jusqu'à 2 000 €</span>
+          </button>
+          <button class="quiz-opt" data-value="5000" onclick="selectQuizOpt(this, 2)">
+            <span class="opt-icon">💎</span>
+            <span class="opt-label">Jusqu'à 5 000 €</span>
+          </button>
+          <button class="quiz-opt" data-value="10000" onclick="selectQuizOpt(this, 2)">
+            <span class="opt-icon">👑</span>
+            <span class="opt-label">10 000 € et plus</span>
+          </button>
+        </div>
+        <button class="btn-quiz-next" onclick="quizNext(3)" id="quiz-next-2" disabled>Suivant →</button>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="quiz-panel" id="quiz-step-3">
+        <h3 class="quiz-question">Quelle durée de voyage préférez-vous ?</h3>
+        <div class="quiz-options">
+          <button class="quiz-opt" data-value="1" onclick="selectQuizOpt(this, 3)">
+            <span class="opt-icon">⏰</span>
+            <span class="opt-label">1 jour</span>
+          </button>
+          <button class="quiz-opt" data-value="3" onclick="selectQuizOpt(this, 3)">
+            <span class="opt-icon">📅</span>
+            <span class="opt-label">3 jours</span>
+          </button>
+          <button class="quiz-opt" data-value="7" onclick="selectQuizOpt(this, 3)">
+            <span class="opt-icon">🗓️</span>
+            <span class="opt-label">1 semaine</span>
+          </button>
+        </div>
+        <button class="btn-quiz-next" onclick="quizFinish()" id="quiz-next-3" disabled>Obtenir ma recommandation ✦</button>
+      </div>
+
+      <!-- Result -->
+      <div class="quiz-panel quiz-result" id="quiz-result">
+        <div class="quiz-result-icon" id="quizResultIcon">✦</div>
+        <h3 class="quiz-result-title">Notre recommandation pour vous</h3>
+        <div class="quiz-result-card" id="quizResultCard"></div>
+        <button class="btn-quiz-restart" onclick="quizRestart()">↺ Recommencer le quiz</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ TESTIMONIALS ═ -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Avis Clients</span>
+      <h2 class="section-title">Ce que disent nos <span class="gold">voyageurs</span></h2>
+    </div>
+    <div class="carousel-wrap" data-animate>
+      <div class="carousel" id="carousel">
+        <div class="carousel-slide">
+          <div class="testi-card glass-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Une expérience absolument hors du commun. J'ai vu la Tour Eiffel naître sous mes yeux. Les équipes de TimeTravel Agency sont professionnelles et rassurantes. Je recommande à 100% !"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">JM</div>
+              <div>
+                <div class="testi-name">Jean-Marc Dupont</div>
+                <div class="testi-dest">Paris 1889 · Mars 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="testi-card glass-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Rencontrer Michel-Ange dans son atelier... les mots me manquent. La technologie de TimeTravel Agency est bluffante. Chaque détail de la Florence de 1504 était parfaitement reconstitué."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SL</div>
+              <div>
+                <div class="testi-name">Sophie Laurent</div>
+                <div class="testi-dest">Florence 1504 · Janvier 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="testi-card glass-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Observer un T-Rex à 20 mètres depuis la capsule blindée... une montée d'adrénaline incroyable ! Le protocole de sécurité est irréprochable. La meilleure aventure de ma vie, sans aucun doute."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">MD</div>
+              <div>
+                <div class="testi-name">Marc Delacroix</div>
+                <div class="testi-dest">Crétacé · Décembre 2025</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ BOOKING ══════ -->
+<section class="booking section" id="booking">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Réservation</span>
+      <h2 class="section-title">Planifiez votre <span class="gold">voyage temporel</span></h2>
+      <p class="section-desc">Remplissez le formulaire et notre équipe vous contactera sous 24h pour confirmer votre aventure.</p>
+    </div>
+    <div class="booking-wrap" data-animate>
+      <div class="booking-info glass-card">
+        <h3>Pourquoi nous choisir ?</h3>
+        <ul class="booking-benefits">
+          <li>✦ Garantie de retour 99,8%</li>
+          <li>✦ Guide historien expert inclus</li>
+          <li>✦ Assurance temporelle complète</li>
+          <li>✦ Support 24/7 en voyage</li>
+          <li>✦ Remboursement intégral si annulation</li>
+        </ul>
+        <div class="booking-contact">
+          <h4>Une question ?</h4>
+          <p>📞 +33 1 89 XX XX XX</p>
+          <p>✉️ contact@timetravel-agency.fr</p>
+          <p>Ou parlez à <strong>Chronos</strong> →</p>
+        </div>
+      </div>
+      <form class="booking-form glass-card" id="bookingForm" onsubmit="submitBooking(event)" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">Prénom *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required />
+            <span class="form-error" id="err-firstName"></span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Nom *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required />
+            <span class="form-error" id="err-lastName"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            <span class="form-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+33 6 XX XX XX XX" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="destination">Destination *</label>
+            <select id="destination" name="destination" required>
+              <option value="">Choisir une époque...</option>
+              <option value="Paris 1889">Paris 1889 — 3 490 €</option>
+              <option value="Florence 1504">Florence 1504 — 4 290 €</option>
+              <option value="Crétacé (-65M ans)">Crétacé (-65M ans) — 6 990 €</option>
+            </select>
+            <span class="form-error" id="err-destination"></span>
+          </div>
+          <div class="form-group">
+            <label for="travelDate">Date souhaitée *</label>
+            <input type="date" id="travelDate" name="travelDate" required />
+            <span class="form-error" id="err-travelDate"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="travelers">Nombre de voyageurs *</label>
+          <div class="travelers-counter">
+            <button type="button" onclick="changeTravelers(-1)">−</button>
+            <span id="travelersCount">1</span>
+            <button type="button" onclick="changeTravelers(1)">+</button>
+          </div>
+          <input type="hidden" id="travelers" name="travelers" value="1" />
+        </div>
+        <div class="form-options">
+          <h4>Options supplémentaires</h4>
+          <label class="checkbox-label">
+            <input type="checkbox" name="insurance" id="insurance" />
+            <span class="checkbox-custom"></span>
+            Assurance temporelle premium (+290 €/personne)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="guide" id="guide" />
+            <span class="checkbox-custom"></span>
+            Guide privé historien expert (+490 €/personne)
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="premium" id="premium" />
+            <span class="checkbox-custom"></span>
+            Pack premium luxe — Capsule VIP (+990 €/personne)
+          </label>
+        </div>
+        <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+          <span>Envoyer ma demande</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Success message -->
+    <div class="booking-success" id="bookingSuccess">
+      <div class="success-portal"></div>
+      <div class="success-icon">✓</div>
+      <h3>Voyage temporel enregistré !</h3>
+      <p>Votre demande de voyage temporel a été enregistrée avec succès. Notre équipe de chrono-navigateurs vous contactera sous 24 heures pour confirmer votre aventure.</p>
+      <a href="#destinations" class="btn-secondary">Explorer d'autres destinations</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ FAQ ══════════ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag">Questions Fréquentes</span>
+      <h2 class="section-title">Tout ce que vous voulez <span class="gold">savoir</span></h2>
+    </div>
+    <div class="faq-list" data-animate>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Le voyage temporel est-il sécurisé ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolument. Notre technologie quantique brevet QT-2089 garantit une navigation temporelle d'une précision à la milliseconde. Chaque voyage est supervisé par une équipe de 12 experts et nos capsules sont dotées de 47 systèmes de sécurité redondants. Notre taux de retour réussi est de 99,8%.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Puis-je modifier le cours de l'histoire ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Non. Notre protocole Chrono-Éthique interdit toute interaction susceptible d'altérer le flux temporel. Nos guides vous accompagnent en permanence et nos capsules sont équipées de champs de neutralisation temporelle qui empêchent tout paradoxe. Vous observez, vous ne modifiez pas.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Que se passe-t-il en cas d'urgence ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Chaque voyageur est équipé d'un Bracelet Quantum d'Urgence (BQU) permettant un rapatriement instantané en cas de danger. Notre centre de contrôle temporel surveille votre position en temps réel 24h/24. Un protocole d'extraction peut être déclenché en moins de 3 secondes depuis n'importe quelle époque.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Quels objets puis-je emporter ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>La liste des objets autorisés dépend de la destination. Pour les voyages historiques, seuls les vêtements d'époque fournis par notre agence sont permis. Pour le Crétacé, l'équipement d'observation complet est inclus. Les téléphones et appareils électroniques modernes sont strictement interdits.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Y a-t-il une limite d'âge ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Les voyageurs doivent avoir au moins 18 ans pour les destinations historiques (Paris 1889 et Florence 1504) et 21 ans pour le Crétacé. Une limite supérieure de 75 ans est recommandée pour des raisons médicales, bien que chaque cas soit étudié individuellement par notre équipe médicale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ CONTACT/FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">⏳</span>
+          <span class="logo-text">TimeTravel<span class="logo-accent">Agency</span></span>
+        </div>
+        <p>Le pionnier mondial du voyage temporel de luxe. Nous repoussons les frontières du possible depuis 2024.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#destinations" onclick="openModal('paris')">Paris 1889</a></li>
+          <li><a href="#destinations" onclick="openModal('florence')">Florence 1504</a></li>
+          <li><a href="#destinations" onclick="openModal('cretaceous')">Crétacé (-65M ans)</a></li>
+          <li><a href="#booking">Réserver</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#ai-advisor">Assistant IA Chronos</a></li>
+          <li><a href="#booking">Assurance temporelle</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about">À propos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>📞 +33 1 89 XX XX XX</li>
+          <li>✉️ contact@timetravel-agency.fr</li>
+          <li>🏢 Paris, France</li>
+          <li>🕐 Lun–Ven: 9h–18h</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 TimeTravel Agency — Tous droits réservés dans toutes les époques.</span>
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions de voyage temporel</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════ CHATBOT ══════ -->
+<div class="chatbot-wrap" id="chatbotWrap">
+  <div class="chatbot-window glass-card" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">
+        <div class="avatar-orb"></div>
+        <span>⏳</span>
+      </div>
+      <div class="chatbot-info">
+        <div class="chatbot-name">Chronos IA</div>
+        <div class="chatbot-status"><span class="status-dot"></span> En ligne · Conseiller temporel</div>
+      </div>
+      <button class="chatbot-close-btn" onclick="toggleChatbot()" aria-label="Fermer">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <div class="msg-bubble">Bonjour ! Je suis <strong>Chronos</strong>, votre assistant de voyage temporel. 🌀 Comment puis-je vous aider aujourd'hui ?</div>
+      </div>
+      <div class="chat-quick-replies" id="quickReplies">
+        <button onclick="quickReply('Quelle destination choisir ?')">Quelle destination ?</button>
+        <button onclick="quickReply('Les dinosaures sont-ils dangereux ?')">Dinosaures dangereux ?</button>
+        <button onclick="quickReply('Comment fonctionne le voyage temporel ?')">Comment ça marche ?</button>
+        <button onclick="quickReply('Quel est le prix ?')">Les tarifs ?</button>
+      </div>
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatInput" placeholder="Posez-moi vos questions..." onkeydown="if(event.key==='Enter') sendChat()" />
+      <button class="chatbot-send-btn" onclick="sendChat()" aria-label="Envoyer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+  <button class="chatbot-bubble" id="chatbotBubble" onclick="toggleChatbot()" aria-label="Ouvrir l'assistant IA">
+    <span class="bubble-icon">⏳</span>
+    <span class="bubble-label">Chronos IA</span>
+    <span class="bubble-notification" id="bubbleNotif">1</span>
+  </button>
+</div>
+
+<!-- Clock widget -->
+<div class="clock-widget" id="clockWidget">
+  <div class="clock-title">⏳ Chronomètre Quantique</div>
+  <div class="clock-display" id="clockDisplay">00:00:00</div>
+  <div class="clock-date" id="clockDate"></div>
+  <div class="clock-voyages">
+    <span class="voyages-live" id="voyagesLive">●</span>
+    <span id="voyagesCount">0</span> voyages actifs
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
